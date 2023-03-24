@@ -1,0 +1,47 @@
+/* body 자체도 약간의 margin을 가지고 있어 해당 값을 없앰 */
+body {
+	margin: 0;
+}
+
+.content {
+  /* [vh] 화면 크기를 기준으로 한 상대적인 높이로, 화면 크기만큼 꽉 차도록 설정 <-> px : 절대적인 고정 길이 값 */
+  height: 100vh;
+  /* [argin: auto] .content 자체 가운데 정렬 */
+  margin: auto;
+  display: flex;
+  /* flex 내부 요소 세로 정렬 */
+  flex-direction: column;
+  /* flex 내부 요소 가로/세로 중앙 정렬 */
+  justify-content: center;
+  align-items: center;
+}
+
+.content h1 {
+  font-size: 40px;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+}
+
+.content button {
+  width: 150px;
+  height: 50px;
+  margin-top: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: transparent;
+  /* [box-shadow] 그림자효과 */
+  box-shadow: 3px 3px 3px;
+  font-size: 18px;
+  font-weight: bold;
+  /* [cursor] 요소에 마우스 커서가 올라갔을 때 어떤 모양을 보여줄 것인지 설정 */
+  cursor: pointer;
+}
+
+.content button:hover {
+  /* [transform: scale(1.1)] 버튼 요소 위에 마우스를 올리면 요소가 1.1배 커지도록 함 */
+  transform: scale(1.1);
+  /* [transition: 0.2s] 해당 애니메이션 효과가 0.2초동안 진행되도록 함 */
+  transition: 0.2s;
+}
