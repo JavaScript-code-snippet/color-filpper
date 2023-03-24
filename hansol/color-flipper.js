@@ -13,7 +13,7 @@ function btnClickHandler() {
 }
 
 function getRandomNumber() {
-  return Math.floor(Math.random() * hexElements.length)
+  return Math.floor(Math.random() * (hexElements.length - 1));
 }
 
 btnClickHandler();
